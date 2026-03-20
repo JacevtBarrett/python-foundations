@@ -1,0 +1,6 @@
+User: Hi there!
+Bot: Hello! How can I help?
+User: What can you do?
+Bot: I can answer questions, provide information, and have conversations.
+User: Cool!
+Bot: Is there anything specific you'd like to know?
