@@ -1,0 +1,4 @@
+SKU,Product,Weight(lb),Status
+1001,Widget A,2.5,In Stock
+1002,Widget B,0,Out of Stock
+1003,Widget C,3.0,In Stock
