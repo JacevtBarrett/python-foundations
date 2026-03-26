@@ -1,0 +1,7 @@
+name: Test Python Syntax
+on: [push]
+jobs:
+  test-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - run: print("Hello World")
