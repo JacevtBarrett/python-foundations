@@ -4,4 +4,4 @@ jobs:
   test-syntax:
     runs-on: ubuntu-latest
     steps:
-      - run: print("Hello World")
+      - run: echo "Hello World"
