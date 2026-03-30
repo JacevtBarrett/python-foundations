@@ -4,7 +4,8 @@ jobs:
   test-syntax:
     runs-on: ubuntu-latest
     steps:
-      - run: apt install -r requirements.txt
+      - run: pip install -r requirements.txt
       - run: pytest
+       - run: python3 -m compileall . -q
 
       
