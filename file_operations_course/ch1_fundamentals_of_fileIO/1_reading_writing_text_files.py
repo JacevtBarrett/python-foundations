@@ -1,3 +1,8 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent # Get the directory of the current file
+chat_log = BASE_DIR / "transcripts" / "03-19-2026_chat_log.txt" # Define the path to the chat log file
+
 # example chat bot conv
 chat_history = [
     "User: Hi there!",
@@ -11,14 +16,14 @@ chat_history = [
 # define the file path
 file_path = "transcripts/03-19-2026_chat_log.txt"
 
-file = open(file_path, "w") # Open the file in write mode)
+file = open(chat_log, "w") # Open the file in write mode)
 for line in chat_history:
     file.write(line + "\n") # Write each line to the file with a newline character
 file.close() # Close the file after writing
 
-print(f"Chat history has been saved to {file_path}")
+print(f"Chat history has been saved to {chat_log}.")
 
-file = open(file_path, "r") # Open the file in read mode
+file = open(chat_log, "r") # Open the file in read mode
 contents = file.read() # Read the contents of the file
 file.close() # Close the file after reading
 

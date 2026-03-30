@@ -5,4 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pip install -r requirements.txt
+      - run: pytest
+       - run: python3 -m compileall . -q
+
       
