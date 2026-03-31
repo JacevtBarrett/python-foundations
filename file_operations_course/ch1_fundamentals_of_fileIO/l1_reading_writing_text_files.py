@@ -14,9 +14,6 @@ def write_txt_file():
         "Bot: Is there anything specific you'd like to know?",
     ]
 
-    # define the file path
-    file_path = "transcripts/03-19-2026_chat_log.txt"
-
     file = open(chat_log, "w") # Open the file in write mode)
     for line in chat_history:
         file.write(line + "\n") # Write each line to the file with a newline character
